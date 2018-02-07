@@ -21,6 +21,7 @@ triggers {
             steps{
                 sh './gradlew build'
                 sh 'ls -l build/libs'
+                sh './genImages.sh'
             }
         }
     }
